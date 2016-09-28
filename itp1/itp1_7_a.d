@@ -3,7 +3,7 @@ import std.algorithm, std.conv, std.range, std.stdio, std.string;
 void main()
 {
   for (;;) {
-    auto rd = readln.split.map!(to!int), m = rd[0], f = rd[1], r = rd[2];
+    auto rd = readln.split.to!(int[]), m = rd[0], f = rd[1], r = rd[2];
     if (m == -1 && f == -1 && r == -1) break;
 
     if (m == -1 || f == -1)

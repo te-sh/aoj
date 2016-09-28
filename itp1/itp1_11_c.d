@@ -2,8 +2,8 @@ import std.algorithm, std.conv, std.range, std.stdio, std.string;
 
 void main()
 {
-  auto di1 = readln.split.map!(to!int).array;
-  auto di2 = readln.split.map!(to!int).array;
+  auto di1 = readln.split.to!(int[]);
+  auto di2 = readln.split.to!(int[]);
 
   auto dice1 = new Dice(di1);
   auto dice2 = new Dice(di2);

@@ -5,7 +5,7 @@ void main()
   auto n = readln.chomp.to!size_t;
 
   auto cards = new bool[](52);
-  foreach (_; 0..n) {
+  foreach (_; n.iota) {
     auto c = readln.chomp;
     cards[cardStoI(c)] = true;
   }

@@ -3,7 +3,7 @@ import std.algorithm, std.conv, std.range, std.stdio, std.string;
 void main()
 {
   auto n = readln.chomp.to!size_t;
-  auto dij = n.iota.map!(_ => readln.split.map!(to!int).array).array;
+  auto dij = n.iota.map!(_ => readln.split.to!(int[])).array;
 
   auto d0 = new Dice(dij[0]);
   dij = dij[1..$];

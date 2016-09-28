@@ -3,7 +3,7 @@ import std.math;
 
 void main()
 {
-  auto rd = readln.split.map!(to!real), a = rd[0], b = rd[1], t = rd[2];
+  auto rd = readln.split.to!(real[]), a = rd[0], b = rd[1], t = rd[2];
   t = t * PI / 180;
 
   auto h = b * sin(t);

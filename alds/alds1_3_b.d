@@ -5,7 +5,7 @@ void main()
 {
   auto rd1 = readln.split, n = rd1[0].to!size_t, q = rd1[1].to!int;
   auto qu = DList!process();
-  foreach (_; 0..n) {
+  foreach (_; n.iota) {
     auto rd2 = readln.split;
     qu.insertBack(process(rd2[0], rd2[1].to!int));
   }

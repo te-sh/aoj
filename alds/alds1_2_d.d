@@ -14,7 +14,7 @@ void main()
   shellSort(ai, n, gi, cnt);
 
   writeln(gi.length);
-  writeln(gi.map!(to!string).join(" "));
+  writeln(gi.to!(string[]).join(" "));
   writeln(cnt);
   ai.each!(writeln);
 }

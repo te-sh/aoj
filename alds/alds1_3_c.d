@@ -6,14 +6,16 @@ void main()
   auto n = readln.chomp.to!size_t;
   auto dl = DList!long();
 
-  foreach (_; 0..n) {
-    auto rd = readln.splitter, cmd = rd.front; rd.popFront;
+  foreach (_; n.iota) {
+    auto rd = readln.chomp.splitter(' '), cmd = rd.front;
     switch (cmd) {
     case "insert":
+      rd.popFront;
       auto x = rd.front.to!long;
       dl.insertFront(x);
       break;
     case "delete":
+      rd.popFront;
       auto x = rd.front.to!long;
       auto r = dl[].find(x).take(1);
       if (!r.empty) dl.linearRemove(r);

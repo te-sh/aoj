@@ -5,7 +5,7 @@ void main()
   auto n = readln.chomp.to!size_t;
   auto p1 = 0, p2 = 0;
 
-  foreach (_; 0..n) {
+  foreach (_; n.iota) {
     auto rd = readln.split, s1 = rd[0], s2 = rd[1];
     if (s1 == s2) {
       ++p1;

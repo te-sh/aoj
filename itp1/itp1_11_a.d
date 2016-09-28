@@ -2,7 +2,7 @@ import std.algorithm, std.conv, std.range, std.stdio, std.string;
 
 void main()
 {
-  auto di = readln.split.map!(to!int).array;
+  auto di = readln.split.to!(int[]);
   auto si = readln.chomp;
 
   auto dice = new Dice(di);

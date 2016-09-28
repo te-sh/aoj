@@ -4,8 +4,8 @@ import std.math;
 void main()
 {
   auto n = readln.chomp.to!size_t;
-  auto xi = readln.split.map!(to!real).array;
-  auto yi = readln.split.map!(to!real).array;
+  auto xi = readln.split.to!(real[]).array;
+  auto yi = readln.split.to!(real[]).array;
 
   auto d1 = mincovskyDistance(xi, yi, 1);
   auto d2 = mincovskyDistance(xi, yi, 2);

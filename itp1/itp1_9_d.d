@@ -5,7 +5,7 @@ void main()
   auto str = readln.chomp.dup;
   auto q = readln.chomp.to!size_t;
 
-  foreach (_; 0..q) {
+  foreach (_; q.iota) {
     auto rd = readln.split, cmd = rd[0];
     auto a = rd[1].to!int, b = rd[2].to!int;
 

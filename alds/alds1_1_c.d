@@ -6,7 +6,7 @@ void main()
   auto n = readln.chomp.to!size_t;
   auto r = 0;
 
- loop: foreach (_; 0..n) {
+ loop: foreach (_; n.iota) {
     auto a = readln.chomp.to!int;
 
     if (a == 2) {

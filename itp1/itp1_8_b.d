@@ -5,6 +5,6 @@ void main()
   for (;;) {
     auto x = readln.chomp;
     if (x == "0") break;
-    writeln(x.map!(to!string).map!(to!int).sum);
+    writeln(x.to!(string[]).to!(int[]).sum);
   }
 }
