@@ -20,4 +20,4 @@
 		(if (= (point) (line-end-position))
 		    (forward-line))
 		(delete-region start (point))))))
-      (clipboard-kill-ring-save (point-min) (point-max)))))
+      (clipboard-kill-ring-save (point-min) (point-max))))))
