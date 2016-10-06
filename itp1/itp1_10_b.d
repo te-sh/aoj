@@ -1,6 +1,7 @@
 import std.algorithm, std.conv, std.range, std.stdio, std.string;
 import std.math;
 
+version(unittest) {} else
 void main()
 {
   auto rd = readln.split.to!(real[]), a = rd[0], b = rd[1], t = rd[2];

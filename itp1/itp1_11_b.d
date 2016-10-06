@@ -7,6 +7,7 @@ const auto ri = [[-1, 2, 4, 1, 3,-1],
                  [ 2,-1, 5, 0,-1, 3],
                  [-1, 3, 1, 4, 2,-1]];
 
+version(unittest) {} else
 void main()
 {
   auto di = readln.split.to!(int[]);
