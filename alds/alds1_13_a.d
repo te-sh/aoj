@@ -4,6 +4,7 @@ enum St { None, Placed, Handed }
 
 const auto n = 8;
 
+version(unittest) {} else
 void main()
 {
   auto bij = new St[][](n, n);

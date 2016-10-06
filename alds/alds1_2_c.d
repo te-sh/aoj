@@ -1,6 +1,7 @@
 import std.algorithm, std.conv, std.range, std.stdio, std.string;
 import std.typecons;
 
+version(unittest) {} else
 void main()
 {
   auto n = readln.chomp.to!size_t;

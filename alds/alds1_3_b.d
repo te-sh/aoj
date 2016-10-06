@@ -1,6 +1,7 @@
 import std.algorithm, std.conv, std.range, std.stdio, std.string;
 import std.container, std.typecons;
 
+version(unittest) {} else
 void main()
 {
   auto rd1 = readln.split, n = rd1[0].to!size_t, q = rd1[1].to!int;

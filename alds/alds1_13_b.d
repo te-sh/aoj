@@ -4,6 +4,7 @@ import std.container, std.typecons;
 const auto n = 3;
 const auto bits = 4;
 
+version(unittest) {} else
 void main()
 {
   auto b = 0UL;

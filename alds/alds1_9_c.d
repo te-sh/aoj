@@ -1,6 +1,7 @@
 import std.algorithm, std.conv, std.range, std.stdio, std.string;
 import std.container;
 
+version(unittest) {} else
 void main()
 {
   auto ai = new PriorityQueue!int(2_0000_000);
